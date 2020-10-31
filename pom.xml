@@ -59,7 +59,8 @@
                 <configuration>
                     <archive>
                         <manifest>
-
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib</classpathPrefix>
                             <mainClass>com.user.api.mongo.UserApiApplication</mainClass>
                         </manifest>
                     </archive>
