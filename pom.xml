@@ -60,7 +60,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib</classpathPrefix>
+                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>com.user.api.mongo.UserApiApplication</mainClass>
                         </manifest>
                     </archive>
@@ -72,7 +72,7 @@
                     <artifactId>heroku-maven-plugin</artifactId>
                     <version>3.0.3</version>
                     <configuration>
-                        <appName>api-user-spring</appName>
+                        <appName>api-spring-users</appName>
                     </configuration>
                 </plugin>
 
