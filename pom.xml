@@ -52,54 +52,8 @@
     <build>
         <plugins>
             <plugin>
-<<<<<<< HEAD
-                <!-- Build an executable JAR -->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.user.api.mongo.UserApiApplication</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-
-                <plugin>
-                    <groupId>com.heroku.sdk</groupId>
-                    <artifactId>heroku-maven-plugin</artifactId>
-                    <version>3.0.3</version>
-                    <configuration>
-                        <appName>api-spring-users</appName>
-                    </configuration>
-                </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.1</version>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>target/dependency/</outputDirectory>
-                            <overWriteReleases>false</overWriteReleases>
-                            <overWriteSnapshots>false</overWriteSnapshots>
-                            <overWriteIfNewer>true</overWriteIfNewer>
-                        </configuration>
-                    </execution>
-                </executions>
-=======
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
->>>>>>> 2f98c21abb4712dc2c79f8f7c437d37f9cf321da
             </plugin>
 
       <plugin>
