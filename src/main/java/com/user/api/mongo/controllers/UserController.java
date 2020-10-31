@@ -13,27 +13,32 @@ import java.util.Optional;
 public class UserController {
     @Autowired
     private UserService userService;
-
+    
+    @CrossOrigin
     @GetMapping("/user")
     public Collection<User> getUser(){
         return userService.getUsers();
     }
 
+    @CrossOrigin
     @GetMapping("/user/{id}")
     public Optional<User> getUserById(@PathVariable Integer id) {
         return userService.getUserById(id);
     }
 
+    @CrossOrigin
     @PostMapping("/user")
     public User setUser(@RequestBody User user) {
         return userService.createUser(user);
     }
 
+    @CrossOrigin
     @DeleteMapping("/user/{id}")
     public Optional<User> deleteUser(@PathVariable Integer id) {
         return userService.deleteUser(id);
     }
 
+    @CrossOrigin
     @PutMapping("/user/{id}")
     public Optional<User> editUser(@PathVariable Integer id, @RequestBody User user) {
         return userService.editUser(id, user);
