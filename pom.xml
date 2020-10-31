@@ -52,6 +52,7 @@
     <build>
         <plugins>
             <plugin>
+<<<<<<< HEAD
                 <!-- Build an executable JAR -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -95,6 +96,10 @@
                         </configuration>
                     </execution>
                 </executions>
+=======
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+>>>>>>> 2f98c21abb4712dc2c79f8f7c437d37f9cf321da
             </plugin>
         </plugins>
     </build>
