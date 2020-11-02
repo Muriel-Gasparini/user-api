@@ -1,5 +1,6 @@
 package com.user.api.mongo.controllers;
 
+import com.user.api.mongo.models.Address;
 import com.user.api.mongo.models.User;
 import com.user.api.mongo.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

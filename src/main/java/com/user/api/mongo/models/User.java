@@ -10,8 +10,8 @@ public class User {
     private String name;
     private String cpf;
     private String birthDate;
-    private String address;
     private Integer age;
+    private Address address = new Address();
 
     public Integer getId() {
         return id;
@@ -34,12 +34,12 @@ public class User {
         this.age = age;
     }
 
-    public String getAddress() {
-        return address;
+    public Address getAddress() {
+        return (Address) address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddress(Address address) {
+        this.address = (Address) address;
     }
 
     public String getCpf() {

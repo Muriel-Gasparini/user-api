@@ -1,6 +1,7 @@
 package com.user.api.mongo.services;
 
 import com.user.api.mongo.DAO.UserDAO;
+import com.user.api.mongo.models.Address;
 import com.user.api.mongo.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
