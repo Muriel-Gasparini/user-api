@@ -35,11 +35,11 @@ public class User {
     }
 
     public Address getAddress() {
-        return (Address) address;
+        return address;
     }
 
     public void setAddress(Address address) {
-        this.address = (Address) address;
+        this.address = address;
     }
 
     public String getCpf() {
